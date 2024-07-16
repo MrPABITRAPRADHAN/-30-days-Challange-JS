@@ -7,15 +7,14 @@ do{
 }
 while(i<=5);
 
+console.log();
 // wap to print factorial of a num using do/while loop
 let n = 5;
 let f = 1;
-let j = n;
 do {
-  f = f*j;
-  j--;
-  
+  f = f*n;
+  n--;
 }
-while(j>=1);
+while(n>=1);
 console.log(f);
 
