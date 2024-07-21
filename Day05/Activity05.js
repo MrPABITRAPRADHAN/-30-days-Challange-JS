@@ -24,20 +24,25 @@ function pqr(){
     console.log("file() ended");
   }
 
+
+  console.log("============");
 // higher order function that take 2 fun.. and 1 num. 
 //apply the first fun.. to the value and second as result
 
-
-function main(){
-    console.log("main() started");
-
-    function first(){
-        let i = 10;  // apply for value
-    }
-
-    function sec(){
-        console.log(i);  // apply for result
-    }
-    console.log("main() ended");
+function oper(a, b, operation){
+  return operation(a, b);
 }
+
+function add(x, y){
+  return x+y;
+}
+function multiple(x, y){
+  return x*y;
+}
+
+console.log(oper(2, 4, add));
+console.log(oper(2, 4, multiple));
+
+
+
 
