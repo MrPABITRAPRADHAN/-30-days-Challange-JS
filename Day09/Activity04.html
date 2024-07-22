@@ -1,0 +1,25 @@
+<!-- modifying attributes and classes -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <div class="img">
+      <a>Go to w3school</a>
+    </div>
+    <h1 id="myh1" class="headingClass">This is Heading1</h1>
+
+    <script>
+        const i = document.querySelector("a");
+        console.log(i);
+        i.setAttribute("href", "https://www.w3schools.com");
+
+        var c = document.getElementById("myh1");
+        c.classList.remove("headingClass");
+
+    </script>
+ </body>
+ </html>

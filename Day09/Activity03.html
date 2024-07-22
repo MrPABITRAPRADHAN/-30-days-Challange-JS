@@ -1,0 +1,25 @@
+removing elements
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="text">
+
+        <h1>Remove element</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, nisi?</p>
+        <h2>Remove last element</h2>
+    </div>
+    <script>
+        // select parent node
+         const e = document.querySelector(".text");
+         // access child element and remove it from perent node
+         const h = document.querySelector("h2")
+         e.removeChild(h);
+         
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to Dom</h1>
+    <h2 class="sel">Select element by class</h2>    
+   
+    <script>
+        // selecting element by id/operator
+       const a = document.querySelector("h1");
+       console.log(a);
+       a.innerText="Select element";
+
+       // select element by className and give it's background color
+       const b = document.querySelector(".sel");
+       console.log(b);
+       b.style.backgroundColor = "yellow";
+    </script>
+</body>
+</html>
