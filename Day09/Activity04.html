@@ -5,20 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+      .intro {
+       color: red;
+       border:2px solid black;
+       width: 40vh;
+      }
+    </style>
  </head>
  <body>
     <div class="img">
       <a>Go to w3school</a>
     </div>
-    <h1 id="myh1" class="headingClass">This is Heading1</h1>
+
+    <h1 class="intro">This is Heading1</h1>
 
     <script>
+       // select a html element and set attribute
         const i = document.querySelector("a");
         console.log(i);
         i.setAttribute("href", "https://www.w3schools.com");
 
-        var c = document.getElementById("myh1");
-        c.classList.remove("headingClass");
+        // remove css class from html
+        const heading = document.querySelector("h1");
+        h1.removeClass("intro");
 
     </script>
  </body>
