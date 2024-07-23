@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    p{
+        height: 20%;
+        width:20%;
+        border: 2px solid black;
+        margin: 10px;
+        background-color: cadetblue;
+        display: inline;
+    }
+</style>
+<body>
+    <h3>dropdown</h3>
+    <select id="dropdown">
+        <option value="Btech" id="d1">Btech</option>
+        <option value="Mtech" id="d1">Mtech</option>
+        <option value="Bca" id="d1">Bca</option>
+        <option value="Mca" id="d1">Mca</option>
+    </select>
+    <p id="para"></p>
+
+     <script>
+        let a = document.getElementById("para");
+        let MydropDn = document.getElementById("dropdown");
+        a.display = "none";
+        MydropDn.addEventListener("change", () =>{
+            a.innerText = MydropDn.value;
+            a.display ="block"
+            console.log(a);
+        })
+     </script>
+</body>
+</html>

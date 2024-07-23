@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>MouseOver</h1>
+    <script>
+        //mouseOver event listener
+       const a = document.querySelector("h1");
+       a.addEventListener("mouseover", function(){
+        a.style.backgroundColor= "green";
+        a.style.color= "white";
+       })
+       // mouseout eventlistener
+       a.addEventListener("mouseout", function(){
+        a.style.color= "green";
+        a.style.backgroundColor ="white"
+       })
+       
+    </script>
+</body>
+</html>

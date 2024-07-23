@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <h1>Basic Event Handling</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem commodi ut corrupti aliquid eligendi nesciunt ad odit blanditiis fugit voluptatum nemo eveniet animi facilis voluptas tempora obcaecati nulla, laborum officiis.</p>
+
+    <button id="btn1">Change style</button>
+
+    <!-- image -->
+    <img src="./Devloper.png" alt="">
+    <button id="btn2">Double click</button>
+
+    <script>
+      let p = document.querySelector("p");
+      let b = document.querySelector("#btn1");
+
+      b.addEventListener("click", function(){
+        p.style.color = "white";
+        p.style.fontSize = "18px";
+        p.style.fontFamily = "cursive";
+        p.style.backgroundColor = "tomato";
+      })
+
+    //   double click event
+      let i = document.querySelector("img");
+      let c = document.querySelector("#btn2");
+
+        c.addEventListener("dblclick", function(){
+        i.style.display= "none";
+      })
+    </script>
+</body>
+</html>
